@@ -19,6 +19,11 @@ const API_URL = 'http://localhost:5000/api';
 // 	});
 // }
 
+function semPost(e) {
+            e.preventDefault();
+            return false;
+        }
+
 async function pegaClientes() {
 
 	fetch(`${API_URL}/clientes`)
